@@ -84,7 +84,7 @@ const AllNews=[
         },
         "author": null,
         "title": "Mylab receives approval for HPV RT-PCR test to detect high risk cervical cancers - The Financial Express",
-        "description": null,
+        "description": "The iQOO Z6 Lite 5G brings the impressive performance from the new Snapdragon 4 Gen 1 chipset priced at Rs. 13,999. Should you buy this? Read on to find out.",
         "url": "https://news.google.com/__i/rss/rd/articles/CBMikAFodHRwczovL3d3dy5maW5hbmNpYWxleHByZXNzLmNvbS9oZWFsdGhjYXJlL2RpYWdub3N0aWMvbXlsYWItcmVjZWl2ZXMtYXBwcm92YWwtZm9yLWhwdi1ydC1wY3ItdGVzdC10by1kZXRlY3QtaGlnaC1yaXNrLWNlcnZpY2FsLWNhbmNlcnMvMjY5NTAzNi_SAQA?oc=5",
         "urlToImage": null,
         "publishedAt": "2022-09-29T06:58:15Z",
