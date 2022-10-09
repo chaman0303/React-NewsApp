@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-
-export default function Politics() {
+export default function Politics({ Title }) {
   return (
     <>
-   
-    <div>
-      <h2>This Is Politics  PAge</h2>
-    </div>
+      <div className="NewsTitleContainer">
+        <h1>
+          <span>{Title}</span> news on NewsFeeder
+        </h1>
+      </div>
     </>
-  )
+  );
 }

@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-export default function National() {
+export default function National({ Title }) {
   return (
-    <div>
-      <h2>this is Nation Pages</h2>
+    <div className="NewsTitleContainer">
+      <h1>
+        <span>{Title}</span> news on NewsFeeder
+      </h1>
     </div>
-  )
+  );
 }

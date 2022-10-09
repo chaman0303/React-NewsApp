@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function Sports() {
+export default function Sports({ Title }) {
   return (
-    <div>
-      <h2> this is sports page</h2>
-    </div>
+    <div className="NewsTitleContainer">
+    <h1>
+      <span>{Title}</span> news on NewsFeeder
+    </h1>
+  </div>
   )
 }

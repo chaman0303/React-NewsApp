@@ -8,37 +8,36 @@ import International from "./Components/NewsCoponent/International";
 import Sports from "./Components/NewsCoponent/Sports";
 import HealthCare from "./Components/NewsCoponent/HealthCare";
 import HeadLines from "./Components/HeadLines";
-import Home from "./Components/NewsCoponent/Home";
-
+import Component404 from "./Components/404";
 
 function App() {
   return (
     <>
-        <div className="App">
-          <h1> News~Feeder</h1>
-        </div>
+      <div className="App">
+        <h1> News~Feeder</h1>
+      </div>
       <BrowserRouter>
-      <Navbar/>
+        <Navbar />
         <Routes>
-        <Route
-            index
-            element={
-              <HeadLines Title="UptoDate"  keyword="all" />
-            }
+          <Route index element={<HeadLines Title="UptoDate" keyword="all" />} />
+          <Route path="/national" element={<National Title="National" />} />
+          <Route
+            path="/technology"
+            element={<Technology Title="Technology" />}
           />
-          <Route path="/" element={<Home/>}/>
-          <Route path="/headlines" element={<HeadLines/>} />
-          <Route path="/national" element={<National/>} />
-          <Route path="/technology" element={<Technology/>} />
-          <Route path="/politics" element={<Politics/>} />
-          <Route path="/international" element={<International/>} />
-          <Route path="/sports" element={<Sports/>} />
-          <Route path="/healthCare" element={<HealthCare/>} />
-
+          <Route path="/politics" element={<Politics Title="Politics" />} />
+          <Route
+            path="/international"
+            element={<International Title="International" />}
+          />
+          <Route path="/sports" element={<Sports Title="Sports" />} />
+          <Route
+            path="/healthCare"
+            element={<HealthCare Title="HealthCare" />}
+          />
+           <Route path="*" element={<Component404 />} />
         </Routes>
       </BrowserRouter>
-
-        
     </>
   );
 }

@@ -1,12 +1,13 @@
 import React from 'react'
 
-export default function Technology() {
+export default function Technology({ Title }) {
   return (
     <>
-   
-    <div>
-      <h1>This Is Technology  Page</h1>
-    </div>
+   <div className="NewsTitleContainer">
+        <h1>
+          <span>{Title}</span> news on NewsFeeder
+        </h1>
+      </div>
     </>
   )
 }

@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-export default function International() {
+export default function International({ Title }) {
   return (
-    <div>
-      <h1>this is International page</h1>
+    <div className="NewsTitleContainer">
+      <h1>
+        <span>{Title}</span> news on NewsFeeder
+      </h1>
     </div>
-  )
+  );
 }
