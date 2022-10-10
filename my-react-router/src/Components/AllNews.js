@@ -1,4 +1,4 @@
-const AllNews=[
+export const AllNews=[
     {
         "source": {
           "id": null,
@@ -261,4 +261,3 @@ const AllNews=[
       }
 ]
 
-export default AllNews;

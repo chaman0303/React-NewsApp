@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Technology from "./Components/NewsCoponent/Technology";
+import {TechnologyNews} from "./Components/NewsData/TechnologyNews";
 import Politics from "./Components/NewsCoponent/Politics";
 import Navbar from "./Components/Navbar";
 import National from "./Components/NewsCoponent/National";
@@ -9,6 +9,7 @@ import Sports from "./Components/NewsCoponent/Sports";
 import HealthCare from "./Components/NewsCoponent/HealthCare";
 import HeadLines from "./Components/HeadLines";
 import Component404 from "./Components/404";
+import {AllNews} from "./Components/AllNews";
 
 function App() {
   return (
@@ -19,11 +20,11 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route index element={<HeadLines Title="UptoDate" keyword="all" />} />
+          <Route index element={<HeadLines Title="UptoDate"  news={AllNews} keyword="all" />} />
           <Route path="/national" element={<National Title="National" />} />
           <Route
             path="/technology"
-            element={<Technology Title="Technology" />}
+            element={<HeadLines Title="technology" news={TechnologyNews} />}
           />
           <Route path="/politics" element={<Politics Title="Politics" />} />
           <Route

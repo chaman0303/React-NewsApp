@@ -1,4 +1,4 @@
-const TechnologyNews=[
+export const TechnologyNews=[
     {
       "source": {
         "id": "australian-financial-review",
@@ -65,4 +65,3 @@ const TechnologyNews=[
       }
   ]
 
-export default TechnologyNews

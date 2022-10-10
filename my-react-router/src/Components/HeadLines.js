@@ -1,11 +1,11 @@
 import { Container, Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import "./Headline.css";
-import AllNews from "./AllNews";
+
 // import axios from "axios";
 // import { useEffect, useState } from "react";
 
-function HeadLines({ Title }) {
+function HeadLines({ Title,news }) {
   //   const [news, setNews] = useState([]);
   //   const key = "579b56e156fe448cb5e8ef9a916d593d";
   //  // const key ='97d36ab0115cb77d227c06ab0feb3044'
@@ -28,7 +28,7 @@ function HeadLines({ Title }) {
           <span>{Title}</span> news on NewsFeeder
         </h1>
       </div>
-      {AllNews.map((news, id) => {
+      {news.map((news, id) => {
         return (
           <Container className="newsContainer">
             <Card className="newsContainerCard">
