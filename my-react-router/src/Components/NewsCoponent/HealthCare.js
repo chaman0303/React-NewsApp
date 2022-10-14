@@ -1,10 +1,9 @@
 import { Container, Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import "../Headline.css";
-import HealthcareNews from '../NewsData/HealthcareNews'
+import HealthcareNews from "../NewsData/HealthcareNews";
 
 function HealthCare({ Title }) {
- 
   return (
     <>
       <div className="NewsTitleContainer">
@@ -41,7 +40,7 @@ function HealthCare({ Title }) {
                   </Card.Text>
                   <Button
                     className="newsContainerButton"
-                    href="http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket"
+                    href={news.url}
                     variant="danger"
                   >
                     Read Full Article
@@ -78,5 +77,3 @@ function HealthCare({ Title }) {
 }
 
 export default HealthCare;
-
-

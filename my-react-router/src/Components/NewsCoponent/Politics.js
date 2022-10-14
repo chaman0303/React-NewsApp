@@ -1,10 +1,9 @@
 import { Container, Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import "../Headline.css";
-import PolticsNews from '../NewsData/PolticsNews'
+import PolticsNews from "../NewsData/PolticsNews";
 
 function Politics({ Title }) {
- 
   return (
     <>
       <div className="NewsTitleContainer">
@@ -41,7 +40,7 @@ function Politics({ Title }) {
                   </Card.Text>
                   <Button
                     className="newsContainerButton"
-                    href="http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket"
+                    href={news.url}
                     variant="danger"
                   >
                     Read Full Article
@@ -78,6 +77,3 @@ function Politics({ Title }) {
 }
 
 export default Politics;
-
-
-
